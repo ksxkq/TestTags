@@ -1,0 +1,26 @@
+table.customizedTable {
+    width: 100%;
+    height: 100%;
+    font-family: verdana, arial, sans-serif;
+    font-size: 11px;
+    color: #333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+}
+
+table.customizedTable th {
+    padding: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+}
+
+table.customizedTable td {
+    padding: 8px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;
+}
