@@ -3,6 +3,7 @@
  */
 
 var tableObj = document.getElementById("table");
+
 insertNewRow(tableObj, "<a>", '<a href="https://developer.mozilla.org">MDN</a>');
 insertNewRow(tableObj, "<abbr>", '<p>I do <abbr title=\"Hypertext Markup Language\">HTML</abbr></p>');
 insertNewRow(tableObj, "<address>", "<address>You can contact author at <a href=\"http://www.somedomain.com/contact\">www.somedomain.com</a>.<br>If you see any bugs, please <a href=\"mailto:webmaster@somedomain.com\">contact webmaster</a>.<br>You may also want to visit us:<br>Mozilla Foundation<br></address>");
@@ -31,4 +32,6 @@ function insertNewRow(tableObj, tagName, tagResult) {
     row.insertCell(0).innerText = tagName;
     row.insertCell(1).innerHTML = tagResult;
 }
+
+
 

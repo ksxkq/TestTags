@@ -14,13 +14,15 @@ table.customizedTable th {
     border-width: 1px;
     border-style: solid;
     border-color: #666666;
-    background-color: #dedede;
 }
 
-table.customizedTable td {
+table.customizedTable td:nth-child(2n-1) {
     padding: 8px;
     border-width: 1px;
     border-style: solid;
     border-color: #666666;
-    background-color: #ffffff;
+}
+
+table.customizedTable tr:nth-child(2n-1) {
+    background-color: #d4e3e5;
 }
