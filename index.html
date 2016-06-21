@@ -1,162 +1,700 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="styles/table.css"/>
-    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="styles/sectionStyle.css"/>
+    <title>Sample</title>
 </head>
 <body>
-<table id="staticTable" class="customizedTable" border="1">
-    <tr>
-        <th>标签</th>
-        <th>结果</th>
-    </tr>
-    <tr>
-        <td>&ltdiv&gt</td>
-        <td>
-            <div>
-                <p>这里可以是任何内容，比如 &lt;p&gt;, &lt;table&gt;，一切由你作主。</p>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td>&ltdl&gt</td>
-        <td>
-            <dl>
-                <dt>Firefox</dt>
-                <dd>A free, open source, cross-platform, graphical web browser
-                    developed by the Mozilla Corporation and hundreds of volunteers.
-                </dd>
 
-                <!-- other terms and definitions -->
-            </dl>
-        </td>
-    </tr>
-    <tr>
-        <td>&ltem&gt</td>
-        <td>
+<h1 class="titles">
+    内容分区
+</h1>
+<section>
+    <aside>
+        <code>address</code>
+    </aside>
+
+    <div class="sample">
+        <address>
+            You can contact author at <a href="http://www.somedomain.com/contact">www.somedomain.com</a>.<br>
+            If you see any bugs, please <a href="mailto:webmaster@somedomain.com">contact webmaster</a>.<br>
+            You may also want to visit us:<br>
+            Mozilla Foundation<br>
+            1981 Landings Drive<br>
+            Building K<br>
+            Mountain View, CA 94043-0801<br>
+            USA
+        </address>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>article header section footer h1 h2 </code>
+    </aside>
+
+    <div class="sample">
+        <article class="film_review">
+            <header>
+                <h2>Jurassic Park</h2>
+            </header>
+            <section class="main_review">
+                <p>Dinos were great!</p>
+            </section>
+            <section class="user_reviews">
+                <article class="user_review">
+                    <p>Way too scary for me.</p>
+                    <footer>
+                        <p>
+                            Posted on
+                            <time datetime="2015-05-16 19:00">May 16</time>
+                            by Lisa.
+                        </p>
+                    </footer>
+                </article>
+                <article class="user_review">
+                    <p>I agree, dinos are my favorite.</p>
+                    <footer>
+                        <p>
+                            Posted on
+                            <time datetime="2015-05-17 19:00">May 17</time>
+                            by Tom.
+                        </p>
+                    </footer>
+                </article>
+            </section>
+            <footer>
+                <p>
+                    Posted on
+                    <time datetime="2015-05-15 19:00">May 15</time>
+                    by Staff.
+                </p>
+            </footer>
+        </article>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>aside</code>
+    </aside>
+
+    <div class="sample">
+        <article>
             <p>
-                In HTML 5, what was previously called <em>block-level</em> content is now called <em>flow</em> content.
+                The Disney movie <em>The Little Mermaid</em> was
+                first released to theatres in 1989.
             </p>
-        </td>
-    </tr>
-    <tr>
-        <td>&ltembed&gt</td>
-        <td>
-            <embed type="video/quicktime" src="movie.mov" width="640" height="480">
-        </td>
-    </tr>
-    <tr>
-        <td>&lthr&gt</td>
-        <td>
-            <p>This is the first paragraph of text. This is the first paragraph of text.
-                This is the first paragraph of text. This is the first paragraph of text.</p>
-
-            <hr>
-
-            <p>This is second paragraph of text. This is second paragraph of text.
-                This is second paragraph of text. This is second paragraph of text.</p>
-        </td>
-    </tr>
-    <tr>
-        <td>&lti&gt</td>
-        <td>
-            <p>拉丁文 <i>Veni, vidi, vici</i> 经常在音乐、艺术、文学中被提到。</p>
-        </td>
-    </tr>
-    <tr>
-        <td>&ltimg&gt</td>
-        <td>
-            <a href="https://developer.mozilla.org/"><img src="mdn-logo-sm.png" alt="MDN"></a>
-        </td>
-    </tr>
-    <tr>
-        <td>&ltinput&gt</td>
-        <td>
-            <input type="text" name="input" value="Type here">
-        </td>
-    </tr>
-    <tr>
-        <td>&ltins&gt</td>
-        <td>
-            <ins>这一段文本是新插入至文档的。</ins>
-        </td>
-    </tr>
-    <tr>
-        <td>&ltkbd&gt</td>
-        <td>
-            <p>Type the following in the Run dialog: <kbd>cmd</kbd><br/>Then click the OK button.</p>
-
-            <p>Save the document by pressing <kbd>Ctrl</kbd> + <kbd>S</kbd></p>
-        </td>
-    </tr>
-    <tr>
-        <td>&ltlabel&gt</td>
-        <td>
-            <label>Click me <input type="text" id="User" name="Name"/></label>
-        </td>
-    </tr>
-    <tr>
-        <td>&ltmain&gt</td>
-        <td>
-            <main>
-                <h1>Apples</h1>
-                <p>The apple is the pomaceous fruit of the apple tree.</p>
-
-                <article>
-                    <h2>Red Delicious</h2>
-                    <p>These bright red apples are the most common found in many
-                        supermarkets.</p>
-                    <p>... </p>
-                    <p>... </p>
-                </article>
-
-                <article>
-                    <h2>Granny Smith</h2>
-                    <p>These juicy, green apples make a great filling for
-                        apple pies.</p>
-                    <p>... </p>
-                    <p>... </p>
-                </article>
-
-            </main>
-            <p>Other p</p>
-        </td>
-    </tr>
-    <tr>
-        <td>&ltmark&gt</td>
-        <td>
-            <p>The &lt;mark&gt; element is used to
-                <mark>highlight</mark>
-                text
+            <aside>
+                The movie earned $87 million during its initial release.
+            </aside>
+            <p>
+                More info about the movie...
             </p>
-        </td>
-    </tr>
-    <tr>
-        <td>&ltnav&gt</td>
-        <td>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </td>
-    </tr>
-    <tr>
-        <td>&ltq&gt</td>
-        <td>
-            <p>Everytime Kenny is killed, Stan will announce
-                <q cite="http://en.wikipedia.org/wiki/Kenny_McCormick#Cultural_impact">
-                    Oh my God, you/they killed Kenny!
-                </q>.
+        </article>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>hgroup</code>
+    </aside>
+
+    <div class="sample">
+        <hgroup>
+            <h1>Main title</h1>
+            <h2>Secondary title</h2>
+        </hgroup>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>nav</code>
+    </aside>
+
+    <div class="sample">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
+<h1 class="titles">
+    文本内容
+</h1>
+<section>
+    <aside>
+        <code>dl dt dd</code>
+    </aside>
+
+    <div class="sample">
+        <dl>
+            <dt>Firefox</dt>
+            <dd>A free, open source, cross-platform, graphical web browser
+                developed by the Mozilla Corporation and hundreds of volunteers.
+            </dd>
+
+            <!-- other terms and definitions -->
+        </dl>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>div</code>
+    </aside>
+
+    <div class="sample">
+        <div>
+            <p>这里可以是任何内容，比如 &lt;p&gt;, &lt;table&gt;，一切由你作主。</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>figure figcaption</code>
+    </aside>
+
+    <div class="sample">
+        <figure>
+            <img src="https://developer.cdn.mozilla.net/media/img/mdn-logo-sm.png" alt="An awesome picture">
+        </figure>
+        <p></p>
+        <!-- Figure with figcaption -->
+        <figure>
+            <img src="https://developer.cdn.mozilla.net/media/img/mdn-logo-sm.png" alt="An awesome picture">
+            <figcaption>Fig1. MDN Logo</figcaption>
+        </figure>
+        <p></p>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>hr</code>
+    </aside>
+
+    <div class="sample">
+        <p>This is the first paragraph of text. This is the first paragraph of text.
+            This is the first paragraph of text. This is the first paragraph of text.</p>
+
+        <hr>
+
+        <p>This is second paragraph of text. This is second paragraph of text.
+            This is second paragraph of text. This is second paragraph of text.</p>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>ol ul li</code>
+    </aside>
+
+    <div class="sample">
+        <ol>
+            <li>first item</li>
+            <li>second item</li>
+            <li>third item</li>
+        </ol>
+        <ul>
+            <li>first item</li>
+            <li>second item</li>
+            <li>third item</li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>main</code>
+    </aside>
+
+    <div class="sample">
+        <main>
+            <h1>Apples</h1>
+            <p>The apple is the pomaceous fruit of the apple tree.</p>
+
+            <article>
+                <h2>Red Delicious</h2>
+                <p>These bright red apples are the most common found in many
+                    supermarkets.</p>
+                <p>... </p>
+                <p>... </p>
+            </article>
+
+            <article>
+                <h2>Granny Smith</h2>
+                <p>These juicy, green apples make a great filling for
+                    apple pies.</p>
+                <p>... </p>
+                <p>... </p>
+            </article>
+
+        </main>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>p</code>
+    </aside>
+
+    <div class="sample">
+        <p>这是第一个段落。这是第一个段落。
+            这是第一个段落。这是第一个段落。
+        </p>
+
+        <p>这是第二个段落。这是第二个段落。
+            这是第二个段落。这是第二个段落。
+        </p>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>pre</code>
+    </aside>
+
+    <div class="sample">
+        <pre>
+            body {
+              color:red;
+            }
+        </pre>
+    </div>
+</section>
+
+<h1 class="titles">
+    内联文本语义
+</h1>
+
+<section>
+    <aside>
+        <code>a</code>
+    </aside>
+
+    <div class="sample">
+        <!-- anchor linking to external file -->
+        <a href="http://www.mozilla.com/">
+            External Link
+        </a>
+        <br>
+        <a href="https://developer.mozilla.org/en-US/" target="_blank">
+            <img src="https://mdn.mozillademos.org/files/6851/mdn_logo.png" alt="MDN logo"/>
+        </a>
+    </div>
+</section>
+
+
+<section>
+    <aside>
+        <code>abbr</code>
+    </aside>
+
+    <div class="sample">
+        <p>Tony Blair is the prime minister of the <abbr title="United Kingdom">UK</abbr></p>
+    </div>
+</section>
+
+
+<section>
+    <aside>
+        <code>b</code>
+    </aside>
+
+    <div class="sample">
+        <p>
+            This article describes several <b>text-level</b> elements. It explains their usage in an <b>HTML</b>
+            document.
+        </p>
+    </div>
+</section>
+
+
+<section>
+    <aside>
+        <code>bdi</code>
+    </aside>
+
+    <div class="sample">
+        <p dir="ltr">This arabic word
+            <bdi>ARABIC_PLACEHOLDER</bdi>
+            is automatically displayed right-to-left.
+        </p>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>bdo</code>
+    </aside>
+
+    <div class="sample">
+        <p>This text will go left to right.</p>
+        <p><bdo dir="rtl">This text will go right to left.</bdo></p>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>br</code>
+    </aside>
+
+    <div class="sample">
+        Mozilla Foundation<br>
+        1981 Landings Drive<br>
+        Building K<br>
+        Mountain View, CA 94043-0801<br>
+        USA
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>cite</code>
+    </aside>
+
+    <div class="sample">
+        More information can be found in <cite>[ISO-0000]</cite>.
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>code</code>
+    </aside>
+
+    <div class="sample">
+        <p>Regular text. <code>This is code.</code> Regular text.</p>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>data</code>
+    </aside>
+
+    <div class="sample">
+        <p>新产品</p>
+        <ul>
+            <li>
+                <data value="3967381398">迷你番茄酱</data>
+            </li>
+            <li>
+                <data value="3967381399">巨无霸番茄酱</data>
+            </li>
+            <li>
+                <data value="3967381400">超级巨无霸番茄酱</data>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>em</code>
+    </aside>
+
+    <div class="sample">
+        <p>
+            In HTML 5, what was previously called <em>block-level</em> content is now called <em>flow</em> content.
+        </p>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>i</code>
+    </aside>
+
+    <div class="sample">
+        <p>拉丁文 <i>Veni, vidi, vici</i> 经常在音乐、艺术、文学中被提到。</p>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>kbd</code>
+    </aside>
+
+    <div class="sample">
+        <p>Type the following in the Run dialog: <kbd>cmd</kbd><br/>Then click the OK button.</p>
+
+        <p>Save the document by pressing <kbd>Ctrl</kbd> + <kbd>S</kbd></p>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>mark</code>
+    </aside>
+
+    <div class="sample">
+        <p>The &lt;mark&gt; element is used to
+            <mark>highlight</mark>
+            text
+        </p>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>q</code>
+    </aside>
+
+    <div class="sample">
+        <p>Everytime Kenny is killed, Stan will announce
+            <q cite="http://en.wikipedia.org/wiki/Kenny_McCormick#Cultural_impact">
+                Oh my God, you/they killed Kenny!
+            </q>.
+        </p>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>ruby rp rt</code>
+    </aside>
+
+    <div class="sample">
+        <ruby>
+            漢
+            <rp>(</rp>
+            <rt>Kan</rt>
+            <rp>)</rp>
+            字
+            <rp>(</rp>
+            <rt>ji</rt>
+            <rp>)</rp>
+        </ruby>
+        <br>
+        <ruby>
+            明日
+            <rp>(</rp>
+            <rt>Ashita</rt>
+            <rp>)</rp>
+        </ruby>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>samp</code>
+    </aside>
+
+    <div class="sample">
+        <p>Regular text. <samp>This is sample text.</samp> Regular text.</p>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>span</code>
+    </aside>
+
+    <div class="sample">
+        <p><span>Some text</span></p>
+        <li><span>
+    <a href="portfolio.html" target="_blank">See my portfolio</a>
+</span></li>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>small</code>
+    </aside>
+
+    <div class="sample">
+        <p>This is the first sentence.
+            <small>This whole sentence is in small letters.</small>
+        </p>
+        </span></li>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>strong</code>
+    </aside>
+
+    <div class="sample">
+        <p>When doing x it is <strong>imperative</strong> to do y before proceeding.</p>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>sub</code>
+    </aside>
+
+    <div class="sample">
+        <p>The chemical formula of water is H<sub>2</sub>O</p>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>sup</code>
+    </aside>
+
+    <div class="sample">
+        <p>This text is <sup>superscripted</sup></p>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>time</code>
+    </aside>
+
+    <div class="sample">
+        <p>The concert starts at
+            <time>20:00</time>
+            .
+        </p>
+        <article>
+            <p>This article was created on
+                <time pubdate>2011-01-28</time>
+                .
             </p>
-        </td>
-    </tr>
-</table>
-<table id="table" class="customizedTable" border="1">
-</table>
-<script src="scripts/main.js"></script>
+        </article>
+
+        <p>The concert took place on
+            <time datetime="2001-05-15 19:00">May 15</time>
+            .
+        </p>
+    </div>
+</section>
+<section>
+    <aside>
+        <code>time</code>
+    </aside>
+
+    <div class="sample">
+        <p>The concert starts at
+            <time>20:00</time>
+            .
+        </p>
+        <article>
+            <p>This article was created on
+                <time pubdate>2011-01-28</time>
+                .
+            </p>
+        </article>
+
+        <p>The concert took place on
+            <time datetime="2001-05-15 19:00">May 15</time>
+            .
+        </p>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>u</code>
+    </aside>
+
+    <div class="sample">
+        <u>Today's Special</u>: Salmon<br/>
+        <span style="text-decoration:underline;">Today's Special</span>: Salmon
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>var</code>
+    </aside>
+
+    <div class="sample">
+        <p> A simple equation: <var>x</var> = <var>y</var> + 2 </p>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>wbr</code>
+    </aside>
+
+    <div class="sample">
+        <p>http://this
+            <wbr>
+            .is
+            <wbr>
+            .a
+            <wbr>
+            .really
+            <wbr>
+            .long
+            <wbr>
+            .example
+            <wbr>
+            .com/With
+            <wbr>
+            /deeper
+            <wbr>
+            /level
+            <wbr>
+            /pages
+            <wbr>
+            /deeper
+            <wbr>
+            /level
+            <wbr>
+            /pages
+            <wbr>
+            /deeper
+            <wbr>
+            /level
+            <wbr>
+            /pages
+            <wbr>
+            /deeper
+            <wbr>
+            /level
+            <wbr>
+            /pages
+            <wbr>
+            /deeper
+            <wbr>
+            /level
+            <wbr>
+            /pages
+        </p>
+    </div>
+</section>
+
+<h1 class="titles">
+    图片和多媒体
+</h1>
+
+<script>
+    function htmlEntities(str) {
+        return String(str)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
+    }
+    function createHandle() {
+        var handle = document.createElement('a');
+        handle.className = 'handle';
+        handle.innerHTML = htmlEntities('<>');
+        return handle;
+    }
+    var samples = document.querySelectorAll('.sample');
+
+    [].forEach.call(samples, function (sample) {
+        console.log(sample);
+        sample.appendChild(createHandle());
+    });
+</script>
 </body>
 </html>
