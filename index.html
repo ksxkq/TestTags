@@ -675,6 +675,243 @@
     图片和多媒体
 </h1>
 
+<section>
+    <aside>
+        <code>map area</code>
+    </aside>
+
+    <div class="sample">
+        <img src="planets.jpg" border="0" usemap="#planetmap" alt="Planets"/>
+
+        <map name="planetmap" id="planetmap">
+            <area shape="circle" coords="180,139,14" href="venus.html" alt="Venus"/>
+            <area shape="circle" coords="129,161,10" href="mercur.html" alt="Mercury"/>
+            <area shape="rect" coords="0,0,110,260" href="sun.html" alt="Sun"/>
+        </map>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>audio</code>
+    </aside>
+
+    <div class="sample">
+        <audio src="http://developer.mozilla.org/@api/deki/files/2926/=AudioTest_(1).ogg" autoplay>
+            Your browser does not support the <code>audio</code> element.
+        </audio>
+    </div>
+</section>
+
+<h1 class="titles">
+    编辑标识
+</h1>
+
+<section>
+    <aside>
+        <code>del</code>
+    </aside>
+
+    <div class="sample">
+        <p>
+            <del>This text has been deleted</del>
+            , here is the rest of the paragraph.
+        </p>
+        <del><p>This paragraph has been deleted.</p></del>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>ins</code>
+    </aside>
+
+    <div class="sample">
+        <ins>这一段文本是新插入至文档的。</ins>
+    </div>
+</section>
+
+<h1 class="titles">
+    表格内容
+</h1>
+
+<section>
+    <aside>
+        <code>table caption thead tfoot tbody tr td </code>
+    </aside>
+
+    <div class="sample">
+        <table>
+            <caption>Awesome caption</caption>
+            <thead>
+            <tr>
+                <th>Header content 1</th>
+                <th>Header content 2</th>
+            </tr>
+            </thead>
+            <tfoot>
+            <tr>
+                <td>Footer content 1</td>
+                <td>Footer content 2</td>
+            </tr>
+            </tfoot>
+            <tbody>
+            <col span="2" style="color:yellow"/>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Body content 1</td>
+                <td>Body content 2</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<h1 class="titles">
+    表单
+</h1>
+
+<section>
+    <aside>
+        <code>button</code>
+    </aside>
+
+    <div class="sample">
+        <button name="button">Click me</button>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>label input datalist option</code>
+    </aside>
+
+    <div class="sample">
+        <label>Choose a browser from this list:
+            <input list="browsers" name="myBrowser"/></label>
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Internet Explorer">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>form fieldset legend</code>
+    </aside>
+
+    <div class="sample">
+        <form action="test.php" method="post">
+            <fieldset>
+                <legend>Title</legend>
+                <input type="radio" id="radio"> <label for="radio">Click me</label>
+            </fieldset>
+        </form>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>meter</code>
+    </aside>
+
+    <div class="sample">
+        <p>Heat the oven to
+            <meter min="200" max="500" value="350">350 degrees</meter>
+            .
+        </p>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>optgroup select option</code>
+    </aside>
+
+    <div class="sample">
+        <select>
+            <optgroup label="Group 1">
+                <option>Option 1.1</option>
+            </optgroup>
+            <optgroup label="Group 2">
+                <option>Option 2.1</option>
+                <option>Option 2.2</option>
+            </optgroup>
+            <optgroup label="Group 3" disabled>
+                <option>Option 3.1</option>
+                <option>Option 3.2</option>
+                <option>Option 3.3</option>
+            </optgroup>
+        </select>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>output</code>
+    </aside>
+
+    <div class="sample">
+        <form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+            <input type="range" name="b" value="50"/> +
+            <input type="number" name="a" value="10"/> =
+            <output name="result"></output>
+        </form>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>progress</code>
+    </aside>
+
+    <div class="sample">
+        <progress value="70" max="100">70 %</progress>
+    </div>
+</section>
+
+<section>
+    <aside>
+        <code>textarea</code>
+    </aside>
+
+    <div class="sample">
+        <textarea name="textarea" rows="10" cols="50">Write something here</textarea>
+    </div>
+</section>
+
+<h1 class="titles">
+    交互元素
+</h1>
+
+<section>
+    <aside>
+        <code>details summary</code>
+    </aside>
+
+    <div class="sample">
+        <details>
+            <summary>Some details</summary>
+            <p>More info about the details.</p>
+        </details>
+    </div>
+</section>
+
 <script>
     function htmlEntities(str) {
         return String(str)

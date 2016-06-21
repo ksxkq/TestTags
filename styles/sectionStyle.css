@@ -3,6 +3,13 @@ html, body {
     padding: 0;
 }
 
+h1 {
+    color: black;
+    background: white;
+    margin: 0;
+    padding: 0.5em;
+}
+
 body {
     min-width: 30em;
     padding: 5em;
